@@ -267,12 +267,11 @@ class PharmacyManagementSystem:
         self.pharmacy_table.column("warning",width=100)
         self.pharmacy_table.column("dosage",width=100)
         self.pharmacy_table.column("price",width=100)
-        self.pharmacy_table.column("productqt",width=100)
-
+        self.pharmacy_table.column("productqt",width = 100)
            
         
     def Addmed(self):
-        conn=mysql.connector.connect(host="localhost",user="root",password="Maihar@7051",database="mydata")
+        conn=mysql.connector.connect(host="localhost",user="root",password="********",database="mydata")
         my_cursor=conn.cursor()
         my_cursor.execute("insert into pharma(Ref,MedName) values(%s,%s)",(
                                                      
